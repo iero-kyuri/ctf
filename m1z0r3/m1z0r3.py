@@ -1,6 +1,9 @@
 # -*- coding:utf-8 -*-
 import socket, struct, telnetlib
+import gmpy
 from fractions import gcd
+from Crypto.Util.number import bytes_to_long
+from Crypto.Util.number import long_to_bytes
 
 #============================
 # socket connection template
@@ -29,6 +32,12 @@ def u64(a): return struct.unpack("<Q",a)[0]
 #===================
 # standard function
 #===================
+def n2s(n):
+  return long_to_bytes(n)
+
+def s2n(s):
+  return bytes_to_long(s)
+
 def egcd(a, b):
  if (a == 0):
      return [b, 0, 1]
@@ -140,12 +149,13 @@ def common(c, e, n):
     m = (pow(c1,a[1],n) * pow(modInv(c2,n),a[2]*-1,n)) % n
   return m
  
-def wiener(n,e):
+def wiener(n,e,c):
   """
   Wiener's Attack
   @param  n int: modulus
   @param  e int: public exponent
-  @return (p,q) tpl: prime numbers
+  @param  c int: cipher text
+  @return m int: plain text
   """
   kd = calcKD(continued_fractions(n,e))
   for (k,d) in kd:
@@ -158,5 +168,16 @@ def wiener(n,e):
       continue
     ans = calcPQ(n-phin+1,n)
     if not ans is None:
-      return (ans[0],ans[1])
+      return pow(c,rsa(ans[0],ans[1]),n)
   return None
+
+def hastad(c,n):
+  """
+  Hastad's Broacast Attack
+  @param  c lst: cipher text
+  @param  n lst: modulus
+  @return m int: plain text
+  """
+  e = len(n)
+  crt = chinese_remainder(n,c)
+  return int(gmpy.mpz(crt).root(e)[0].digits())
