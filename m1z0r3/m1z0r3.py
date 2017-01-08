@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import socket, struct, telnetlib
-from fractions import *
+from fractions import gcd
 
 #============================
 # socket connection template
