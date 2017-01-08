@@ -39,18 +39,18 @@ def s2n(s):
   return bytes_to_long(s)
 
 def egcd(a, b):
- if (a == 0):
-     return [b, 0, 1]
- else:
-     g, y, x = egcd(b % a, a)
-     return [g, x - (b // a) * y, y]
+  if (a == 0):
+    return [b, 0, 1]
+  else:
+    g, y, x = egcd(b % a, a)
+    return [g, x - (b // a) * y, y]
 
 def modInv(a, m):
- g, x, y = egcd(a, m)
- if (g != 1):
-     raise Exception("[-]No modular multiplicative inverse of %d under modulus %d" % (a, m))
- else:
-     return x % m
+  g, x, y = egcd(a, m)
+  if (g != 1):
+    raise Exception("[-]No modular multiplicative inverse of %d under modulus %d" % (a, m))
+  else:
+    return x % m
 
 def chinese_remainder(n, a):
 	sum = 0
