@@ -31,5 +31,8 @@ vagrant ssh
 ができればok.  
 ただしwindowsではsshが面倒なのでteratermかなにかを使う.  
 
-## todo
+## ToDo
 bash on windowsからvagrantが使えればスムーズにsshまでできそうだが, virtualboxがうまく動かずに断念中.
+
+## reference
+[vagrant + virtualboxで作ったRuby環境を他のPCに環境移行する方法](http://qiita.com/htk_jp/items/e7ab14238bb11057817e)
