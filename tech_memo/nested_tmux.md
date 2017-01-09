@@ -12,6 +12,6 @@ bind-key b send-prefix
 C-b b %  
 とすれば縦分割をしてやることができる.
 
-# reference
+## reference
 [tmux nested tmux (tmux の中で tmux) を使う設定(備忘録)](http://blog.ccm-lulu.com/2013/02/tmux-nested-tmux-tmux-tmux.html)  
 [Practical Tmux](https://mutelight.org/practical-tmux)
