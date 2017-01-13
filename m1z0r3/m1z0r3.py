@@ -53,13 +53,12 @@ def modInv(a, m):
     return x % m
 
 def chinese_remainder(n, a):
-	sum = 0
-	prod = reduce(lambda a, b: a*b, n)
-		 
-	for n_i, a_i in zip(n, a):
-		p = prod / n_i
-		sum += a_i * mul_inv(p, n_i) * p
-	return sum % prod
+  sum = 0
+  prod = reduce(lambda a, b: a*b, n)
+  for n_i, a_i in zip(n, a):
+    p = prod / n_i
+    sum += a_i * mul_inv(p, n_i) * p
+  return sum % prod
 
 def mul_inv(a, b):
   b0 = b
@@ -110,6 +109,18 @@ def calcPQ(a,b):
     return (p,q)
   else:
     return None
+
+def xor(a,b):
+  r = ""
+  for x,y in zip(a,b):
+    r += chr(ord(x)^ord(y))
+  return r
+
+def pad(m,block_size = 16):
+  return m + (chr(block_size - len(m) % block_size) * (block_size - len(m) % block_size))
+
+def unpad(m):
+  return m[:-ord(m[-1])]
 
 #============
 # RSA cipher
