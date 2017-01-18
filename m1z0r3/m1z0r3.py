@@ -122,6 +122,28 @@ def pad(m,block_size = 16):
 def unpad(m):
   return m[:-ord(m[-1])]
 
+def int_sqrt(n):
+	def f(prev):
+		while True:
+			m = (prev + n/prev)/2
+			if m >= prev:
+				return prev
+			prev = m
+	return f(n)
+
+def fermat(n):
+	x = int_sqrt(n) + 1
+	y = int_sqrt(x*x - n)
+	while True:
+		w = x*x - n -y*y
+		if w == 0:
+			return (x-y,x+y)
+		elif w > 0:
+			y = y+1
+		else:
+			x = x+1
+			y = int_sqrt(x*x-n)
+
 #============
 # RSA cipher
 #============
