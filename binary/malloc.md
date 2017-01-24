@@ -3,7 +3,7 @@ heap問を解くにあたり, まずは一番基本となるmalloc/freeのメモ
 何か違ってたら教えてください.  
 
 # arena
-mallocによってheap領域からメモリが確保されるが, どこから確保するかなどを管理している機構がarenaである.  
+mallocによってheap領域からメモリが確保されるが, どこから確保するかなどを管理している機構がarena.  
 data領域に存在する.  
 main_arenaというものがデフォルトで定義されており, 他のarenaは必要に応じて作成される.
 main_arenaだけ知っておけばおそらく大丈夫なのでここではmain_arenaに絞って話しを進める.  
@@ -22,10 +22,11 @@ struct malloc_state{
 後述のfastbinsに登録するメモリの最大サイズ.
 
 ### fastbins
-小さい要求メモリに対して, 素早くメモリ確保をできるように用意されたchunkのリストヘッダの配列
+小さい要求メモリに対して, 素早くメモリ確保をできるように用意されたchunkのリストヘッダの配列. 単方向リスト.
 
 ### top
-次にmallocが呼ばれた際に, おそらく返すことになるであろうchunkのポインタ
+次にmallocが呼ばれた際に, おそらく返すことになるであろうchunkのポインタ.  
+厳密には, max_fast以上mmap_threshold以下の要求サイズで, かつunsorted_chunksから適切なsizeのchunkが見つからなかったときにここからchunkを切り出す.(?)
 
 ### bins
 max_fastよりも大きいサイズのchunkを登録するリストヘッダの配列.  
@@ -67,3 +68,8 @@ mallocによりメモリが確保される際, 8バイトアラインメント�
 未使用のchunkでありbinsに登録されている場合, そのリンクリストの前後の要素へのポインタが格納される. リンクリストの最初, 最後はそれぞれmain_arenaへのポインタとなるが, binsのアドレスではなくその8バイト前となる. これは, chunkとして見た場合, fd,bkメンバが先頭から8バイトの位置にあるためである.  
 未使用chunkであるということは, **メモリ上で**直後のchunkにはprev_sizeが存在する.
 使用中のchunkには存在しない.  
+
+# Refernce
+- [malloc(3)のメモリ管理構造](http://www.valinux.co.jp/technologylibrary/document/linux/malloc0001/)
+- [The 67th Yokohama kernel reading party](https://www.youtube.com/watch?v=0-vWT-t0UHg)
+
