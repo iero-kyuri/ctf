@@ -34,3 +34,6 @@ flag_enc'2 = X ^ Round1_key'2
 
 # flag
 hitcon{73n_w34k_p455w0rd5_c0mb1n3d_4r3_571ll_wE4k_QQ}
+
+# ToDo
+Proof of Work ができない
