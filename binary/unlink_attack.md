@@ -27,7 +27,7 @@ Pへの入力によってヒープオーバーフローを起こし, P2を上書
 これによりwritableな領域なら任意の箇所を書き換えることができてしまう攻撃.  
 
 # 具体例
-- [DEF CON 2014 heap - writeup]()
+- [DEF CON 2014 heap - writeup](https://github.com/iero-kyuri/ctf/tree/master/writeup/defcon2014/heap)
 
 # ToDo
 - unsafe unlink attack
