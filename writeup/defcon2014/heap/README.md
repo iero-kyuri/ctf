@@ -3,7 +3,7 @@
 # Write-up
 Dougle Lee mallocが実装された問題.  
 最初に20個ほどmallocされ, 入力後にすべてfreeされていく.  
-size=260で入力しろと言われるが, 普通にオーバーフロできる.
+size=260で入力しろと言われるが, 普通にオーバーフローできる.
 
 古いmallocなので, 古典的なUnlink Attackをするだけ.  
 printf@pltを書き換えてret2shellcodeする.  
