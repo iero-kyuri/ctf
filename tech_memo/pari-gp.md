@@ -1,4 +1,4 @@
-# PARI/GP install for OS X
+# Pari/GP install for OS X
 ```
 brew install homebrew/x11/pari
 ```
