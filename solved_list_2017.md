@@ -7,7 +7,7 @@
 # list
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
-|Plaid CTF 2013|[ropsaurusrex](http://shell-storm.org/repo/CTF/PlaidCTF-2013/Pwnable/ropasaurusrex-200/)|Pwn|ToDo|2017/1/27|
+|Plaid CTF 2013|[ropsaurusrex](http://shell-storm.org/repo/CTF/PlaidCTF-2013/Pwnable/ropasaurusrex-200/)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/plaid2013/ropsaurusrex)|2017/1/27|
 |DEF CON Qual 2014|[heap](https://github.com/ctfs/write-ups-2014/blob/master/def-con-ctf-qualifier-2014/heap/README.md)|Baby's first|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/defcon2014/heap)|2017/1/25|
 |HITCON Qual 2016|pake|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/hitcon2016/pake)|2017/1/25|
 |Sharif CTF 2016|unterscheide|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/sharif2016/unterscheide)|2017/1/18|
