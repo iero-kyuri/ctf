@@ -7,6 +7,7 @@
 # list
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
+|[Alex CTF](https://ctf.oddcoder.com/)|RE1,CR1,CR3,CR4,SC1,SC2|Reversing,Crypto,Stegano,PPC||2017/2/6|
 |Plaid CTF 2014|[ezhp](https://github.com/ctfs/write-ups-2014/blob/master/plaid-ctf-2014/ezhp/README.md)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/plaid2014)|2017/1/29|
 |Plaid CTF 2013|[ropsaurusrex](http://shell-storm.org/repo/CTF/PlaidCTF-2013/Pwnable/ropasaurusrex-200/)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/plaid2013/ropsaurusrex)|2017/1/27|
 |DEF CON Qual 2014|[heap](https://github.com/ctfs/write-ups-2014/blob/master/def-con-ctf-qualifier-2014/heap/README.md)|Baby's first|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/defcon2014/heap)|2017/1/25|
