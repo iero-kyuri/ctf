@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*-
 import socket, struct, telnetlib
 import gmpy
+import string
+from tqdm import tqdm
 from fractions import gcd
 from Crypto.Util.number import bytes_to_long
 from Crypto.Util.number import long_to_bytes
@@ -220,3 +222,29 @@ def hastad(c,n):
   e = len(n)
   crt = chinese_remainder(n,c)
   return int(gmpy.mpz(crt).root(e)[0].digits())
+
+#============
+# morse code
+#============
+TABLE={'A':'.-','B':'-...','C':'-.-.','D':'-..','E':'.','F':'..-.','G':'--.','H':'....','I':'..','J':'.---','K':'-.-','L':'.-..','M':'--','N':'-.','O':'---','P':'.--.','Q':'--.-','R':'.-.','S':'...','T':'-','U':'..-','V':'...-','W':'.--','X':'-..-','Y':'-.--','Z':'--..','1':'.----','2':'..---','3':'...--','4':'....-','5':'.....','6':'-....','7':'--...','8':'---..','9':'----.','0':'-----','.':'.-.-.-',',':'--..--',':':'---...','?':'..--..',"'":'.----.','-':'-....-','(':'-.--.',')':'-.--.-','/':'-..-.','=':'-...-','+':'.-.-.','"':'.-..-.','@':'.--.-.'}
+RTABLE = dict(map(lambda(k,v):(v,k), TABLE.items()))
+def morse_encode(s):
+  return ' '.join(map((lambda x: TABLE[x]), list(s.upper())))
+def morse_decode(s):
+  return ''.join(map((lambda x: RTABLE[x]), s.split(" ")))
+
+#=======
+# rot n
+#=======
+def caesar(text,key=13):
+  low = string.ascii_lowercase
+  up = string.ascii_uppercase
+  ret = ""
+  for c in text:
+    if c in low:
+      ret += low[(low.index(c)+key)%len(low)]
+    elif c in up:
+      ret += up[(up.index(c)+key)%len(up)]
+    else:
+      ret += c
+  return ret
