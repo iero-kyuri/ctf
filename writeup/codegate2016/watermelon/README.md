@@ -19,7 +19,6 @@ index=101としてやると, musicの16文字目からで$eipを奪うことが�
 ただし, systemやexecveが使われておらず, libcも与えられていない. そこで, dl_resolveをしてsystem関数のアドレス解決を行い, シェルを起動する.  
 なお, return to dl resolveについては参考として載せたももテクの記事を見てもらいたい.  
 ついでに, stack pivotもやったことがなかったのでももテクにのっとり行った. 基本的にコピペ.  
-Stack pivotもReturn to dl resolveも関数化できそうなので, 近日中に追加予定.  
 
 ## おぼえがき
 ここからは, 解く際に詰まったor今後も詰まりそうなところを自分用にメモ.  
