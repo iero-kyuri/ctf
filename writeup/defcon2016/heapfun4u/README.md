@@ -45,6 +45,7 @@ chunk4のdata部分には, [main関数からのreturn address - 自身のアド�
 ```
 chunk2->fd + chunk2->fd->size - 8 = chunk2->bk
 ```
+data部分にdummyのchunk_hdrを作ることでunlink処理でうまく書き換えられるようにする. 
 
 この状態でfree_listは以下のようになっている.  
 ```
@@ -62,4 +63,4 @@ chunk2->bk + chunk2->bk->size = chunk2->fd
 そこで, jmp命令(\xeb)を用いたshellcodeを使った.(通常のshellcodeの先頭に, 6ワード分jmpさせる命令とNULLバイトを入れただけ)
 
 ## solver
-[solver.py]
+[solver.py](https://github.com/iero-kyuri/ctf/blob/master/writeup/defcon2016/heapfun4u/solver.py)
