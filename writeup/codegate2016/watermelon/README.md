@@ -26,7 +26,7 @@ Stack pivotもReturn to dl resolveも関数化できそうなので, 近日中�
 ### stack pivot
 あまりオーバフローできずにROPが組めない場合などに使うテクニック.  
 bss領域に続きのROPをreadしてesp,ebpを差し向けるやつ.  
-**bss領域のアドレスを指定する際は, 中間あたりを指定すること**
+**bss領域のアドレスを指定する際は, 中間あたりを指定すること**  
 bss領域の先頭へpivotすると, systemが呼ばれた際にスタックの頭打ちが原因でSIGSEGVする.  
 ### Return to dl resolve
 アドレス解決を行う仕組みを利用し, system関数などのアドレスを解決させてシェルを起動するテクニック.  
