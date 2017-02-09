@@ -30,3 +30,6 @@ bss領域に続きのROPをreadしてesp,ebpを差し向けるやつ.
 bss領域の先頭へpivotすると, systemが呼ばれた際にスタックの頭打ちが原因でSIGSEGVする.  
 ### Return to dl resolve
 アドレス解決を行う仕組みを利用し, system関数などのアドレスを解決させてシェルを起動するテクニック.  
+
+# 参考
+- [ROP stager + Return-to-dl-resolveによるASLR+DEP回避](http://inaz2.hatenablog.com/entry/2014/07/15/023406)
