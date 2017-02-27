@@ -2,11 +2,13 @@
 import socket, struct, telnetlib
 import gmpy
 import string
+from PIL import Image
 from tqdm import tqdm
 from fractions import gcd
 from Crypto.Util.number import bytes_to_long
 from Crypto.Util.number import long_to_bytes
 from Crypto.PublicKey import RSA
+from steganography.steganography import Steganography
 
 #===========
 # shellcode
@@ -257,3 +259,18 @@ def caesar(text,key=13):
     else:
       ret += c
   return ret
+
+#===============
+# Steganography
+#===============
+def steg_solve(fname):
+  solve1 = Steganography.decode(fname)
+  im = Image.open(fname)
+  width,height = im.size
+  secretdata = ''
+  for y in range(height):
+    for x in range(width):
+      (r,g,b) = im.getpixel((x,y))
+      secretdata += str(r&1) + str(g&1) + str(b&1)
+  solve2 = "".join([chr(int(secretdata[i:i+8],2)) for i in range(0,len(secretdata),8)])
+  return (solve1,solve2)
