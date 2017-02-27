@@ -6,6 +6,7 @@ from tqdm import tqdm
 from fractions import gcd
 from Crypto.Util.number import bytes_to_long
 from Crypto.Util.number import long_to_bytes
+from Crypto.PublicKey import RSA
 
 #===========
 # shellcode
@@ -62,6 +63,11 @@ def modInv(a, m):
     raise Exception("[-]No modular multiplicative inverse of %d under modulus %d" % (a, m))
   else:
     return x % m
+
+def openssl_public_read(fname):
+  with open(fname,'r') as f:
+    key = RSA.importKey(f.read())
+  return key
 
 def chinese_remainder(n, a):
   sum = 0
