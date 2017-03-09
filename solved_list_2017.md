@@ -7,6 +7,8 @@
 # list
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
+|SECCON 2016|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/06/212843)|2017/3/6|
+|TW/MMA CTF 2016|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/02/28/163238)|2017/2/28|
 |BKP 2017|rsa buffet|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/bkp2017/rsa-buffet)|2017/2/27|
 |Codegate 2017|BabyPwn|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/codegate2017/BabyPwn)|2017/2/10|
 |Codegate 2016|watermelon|Pwnable|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/codegate2016/watermelon)|2017/2/9|
