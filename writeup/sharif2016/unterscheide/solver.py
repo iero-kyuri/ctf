@@ -14,6 +14,7 @@ for i,x in enumerate(fenc):
   q = gcd(q,fenc[i]-fenc[0]-i)
 print "[+] q",q
 
+print (q-1)/2
 (p1,p2) = fermat((q-1)/2)
 
 print "[+] p1,p2",p1,p2
