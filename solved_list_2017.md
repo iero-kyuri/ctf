@@ -8,7 +8,7 @@
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
 |ED CTF|my_sandbox|Pwn|ToDo|2017/3/12|
-|Codegate 2016|OldSchool||Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/10/185357)|2017/3/10|
+|Codegate 2016|OldSchool|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/10/185357)|2017/3/10|
 |SECCON 2016|AlphaComplex1|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/06/212843)|2017/3/6|
 |TW/MMA CTF 2016|Backpacker's cipher extra mode|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/02/28/163238)|2017/2/28|
 |BKP 2017|rsa buffet|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/bkp2017/rsa-buffet)|2017/2/27|
