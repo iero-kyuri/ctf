@@ -7,6 +7,8 @@
 # list
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Leak City](https://ctf.lse.epita.fr/ex/58/)|Crypto||2017/3/13|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Format C:](https://ctf.lse.epita.fr/ex/5/)|Exploit||2017/3/12|
 |ED CTF|my_sandbox|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/12/140543)|2017/3/12|
 |Codegate 2016|OldSchool|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/10/185357)|2017/3/10|
 |SECCON 2016|AlphaComplex1|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/06/212843)|2017/3/6|
