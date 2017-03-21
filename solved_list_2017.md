@@ -8,12 +8,12 @@
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
 |0CTF 2017|integrity,oneTimePad|crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/20/110926)|2017/3/20|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP2](https://ctf.lse.epita.fr/ex/74/)|Workshop||2017/3/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP1](https://ctf.lse.epita.fr/ex/73/)|Workshop||2017/3/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP0](https://ctf.lse.epita.fr/ex/72/)|Workshop||2017/3/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[OnThePipe](https://ctf.lse.epita.fr/ex/59/)|Crypto||2017/3/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Leak City](https://ctf.lse.epita.fr/ex/58/)|Crypto||2017/3/13|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Format C:](https://ctf.lse.epita.fr/ex/5/)|Exploit||2017/3/12|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP2](https://ctf.lse.epita.fr/ex/74/)|Workshop|None|2017/3/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP1](https://ctf.lse.epita.fr/ex/73/)|Workshop|None|2017/3/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[ROP0](https://ctf.lse.epita.fr/ex/72/)|Workshop|None|2017/3/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[OnThePipe](https://ctf.lse.epita.fr/ex/59/)|Crypto|None|2017/3/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Leak City](https://ctf.lse.epita.fr/ex/58/)|Crypto|None|2017/3/13|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Format C:](https://ctf.lse.epita.fr/ex/5/)|Exploit|None|2017/3/12|
 |ED CTF|my_sandbox|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/12/140543)|2017/3/12|
 |Codegate 2016|OldSchool|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/10/185357)|2017/3/10|
 |SECCON 2016|AlphaComplex1|Crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/06/212843)|2017/3/6|
@@ -22,16 +22,16 @@
 |Codegate 2017|BabyPwn|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/codegate2017/BabyPwn)|2017/2/10|
 |Codegate 2016|watermelon|Pwnable|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/codegate2016/watermelon)|2017/2/9|
 |DEF CON Qual 2016|[heapfun4u](https://github.com/ctfs/write-ups-2016/tree/master/def-con-ctf-qualifiers-2016/pwn/heapfun4u)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/defcon2016/heapfun4u)|2017/2/9|
-|[Alex CTF](https://ctf.oddcoder.com/)|RE1,CR1,CR3,CR4,SC1,SC2|Reversing,Crypto,Stegano,PPC||2017/2/6|
+|[Alex CTF](https://ctf.oddcoder.com/)|RE1,CR1,CR3,CR4,SC1,SC2|Reversing,Crypto,Stegano,PPC|None|2017/2/6|
 |Plaid CTF 2014|[ezhp](https://github.com/ctfs/write-ups-2014/blob/master/plaid-ctf-2014/ezhp/README.md)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/plaid2014)|2017/1/29|
 |Plaid CTF 2013|[ropsaurusrex](http://shell-storm.org/repo/CTF/PlaidCTF-2013/Pwnable/ropasaurusrex-200/)|Pwn|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/plaid2013/ropsaurusrex)|2017/1/27|
 |DEF CON Qual 2014|[heap](https://github.com/ctfs/write-ups-2014/blob/master/def-con-ctf-qualifier-2014/heap/README.md)|Baby's first|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/defcon2014/heap)|2017/1/25|
 |HITCON Qual 2016|pake|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/hitcon2016/pake)|2017/1/25|
 |Sharif CTF 2016|unterscheide|Crypto|[link](https://github.com/iero-kyuri/ctf/tree/master/writeup/sharif2016/unterscheide)|2017/1/18|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Serveur](https://ctf.lse.epita.fr/ex/38/)|Exploit||2017/1/17|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Encryption == Security](https://ctf.lse.epita.fr/ex/16/)|Crypto||2017/1/16|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Dragon](https://ctf.lse.epita.fr/ex/43/)|Exploit||2017/1/15|
-|DEF CON Qual 2015|[babyecho](https://github.com/ctfs/write-ups-2015/blob/master/defcon-qualifier-ctf-2015/babys-first/babyecho/README.md)|Baby's First||2017/1/15|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Very Super Secure Authentication](https://ctf.lse.epita.fr/ex/10/)|Misc||2017/1/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Coin-Seller](https://ctf.lse.epita.fr/ex/37/)|Exploit||2017/1/14|
-|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Broken AES](https://ctf.lse.epita.fr/ex/25/)|Crypto||2017/1/13|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Serveur](https://ctf.lse.epita.fr/ex/38/)|Exploit|None|2017/1/17|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Encryption == Security](https://ctf.lse.epita.fr/ex/16/)|Crypto|None|2017/1/16|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Dragon](https://ctf.lse.epita.fr/ex/43/)|Exploit|None|2017/1/15|
+|DEF CON Qual 2015|[babyecho](https://github.com/ctfs/write-ups-2015/blob/master/defcon-qualifier-ctf-2015/babys-first/babyecho/README.md)|Baby's First|None|2017/1/15|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Very Super Secure Authentication](https://ctf.lse.epita.fr/ex/10/)|Misc|None|2017/1/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Coin-Seller](https://ctf.lse.epita.fr/ex/37/)|Exploit|None|2017/1/14|
+|[LSE CTF](https://ctf.lse.epita.fr/ex/)|[Broken AES](https://ctf.lse.epita.fr/ex/25/)|Crypto|None|2017/1/13|
