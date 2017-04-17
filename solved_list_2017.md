@@ -7,6 +7,7 @@
 # list
 | CTF        | Problem     | Genre        | Write-up |Date        |
 |:----------:|:-----------:|:------------:|:-----------:|:------------:|
+|ASIS 2017|A fine OTP server,F-4 Phantom,Secured OTP server,DLP|crypto|[link](http://kyuri.hatenablog.jp/entry/2017/04/09/224913)|2017/4/9|
 |BKP 2016|cookbook|Pwn|[link](http://kyuri.hatenablog.jp/entry/2017/03/31/194025)|2017/3/31|
 |pwnable.kr|unexploitable|pwn|None|2017/3/30|
 |0CTF 2017|EasiestPrintf|crypto|[link](http://kyuri.hatenablog.jp/entry/2017/03/29/181114)|2017/3/29|
