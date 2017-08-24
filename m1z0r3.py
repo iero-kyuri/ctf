@@ -266,5 +266,5 @@ def steg_solve(fname):
 printable = string.letters + string.digits + string.punctuation
 
 def printable_generator(n):
-  for s in printable,repeat=n):
+  for s in itertools.product(printable,repeat=n):
     yield s
