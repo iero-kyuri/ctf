@@ -208,6 +208,26 @@ def wiener(e,n):
     if D>0 and gmpy.is_square(D):
       return d
 
+def extend_wiener(e,n):
+  """
+  Implementation of "A variant of Wiener's attack on RSA"
+  @param  e int: public exponent
+  @param  n int: modulus
+  @return d int: private key
+  """
+  m = 2
+  c = pow(m,e,n)
+  q0 = 1
+  cf = continued_fraction(e,n)
+  convergents = convergents_of_contfrac(cf)
+  for p1,q1 in convergents:
+    for r in range(10):
+      for s in range(10):
+        d = r*q1 + s*q0
+        if pow(c,d,n) == m:
+          return d
+    q0 = q1
+
 def hastad(c,n):
   """
   Hastad's Broacast Attack
@@ -268,3 +288,28 @@ printable = string.letters + string.digits + string.punctuation
 def printable_generator(n):
   for s in itertools.product(printable,repeat=n):
     yield s
+
+def primes(b):
+  p = 1
+  while p <= b:
+    p = gmpy.next_prime(p)
+    yield p
+
+#============
+# p-1 method
+#============
+def p_minus_1(n,b):
+  M=1
+  a = 2
+  i=0
+  for q in primes(b):
+    i+=1
+    # if i % 1000 == 0: print 'Progress:', q, b
+    base = 1
+    while base*q <= n:
+      base *= q
+    a = pow(a, base, n)
+    g = gcd(a-1,n)
+    if g != 1 and g != n:
+      return g
+  assert 0
